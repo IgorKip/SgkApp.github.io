@@ -1,0 +1,45 @@
+.timetable__item{
+    padding: 1rem;
+}
+.timetable__item-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #d7d8d9;
+}
+.timetable__item-lesson{
+    margin-top: 0.5rem;
+}
+.lesson{
+    display: grid;
+    grid-template-columns: 8% 52% 30% 10%;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+.lesson:last-child{
+    margin-bottom: 0;
+}
+.lesson-teacher{
+    padding: 0 5px;
+}
+.lesson-number > span{
+    color: white;
+    padding: 5px;
+    background-color: #2687f4;
+    display: block;
+    width: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 980px) {
+    .lesson{
+        font-size: 12px;
+    }
+    .lesson-number > span {
+        width: 18px;
+    }
+    .lesson-name{
+        padding-left: 10px;
+    }
+}
